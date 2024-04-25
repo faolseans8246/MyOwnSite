@@ -1,0 +1,81 @@
+
+
+.header-container {
+    position: fixed;
+    top: 15px;
+    background-color: #043ae8;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between; /* Elementlarni ikkala joyida joylashtirish */
+    align-items: center; /* Elementlarni vertikal ravishda o'rtada joylash */
+    padding: 10px; /* Kerakli bo'lsa paddingni o'zgartiring */
+}
+
+
+.menu-site {
+    display: flex;
+    justify-content: center; /* Elementlarni o'rtada joylash */
+    align-items: center; /* Elementlarni vertikal ravishda o'rtada joylash */
+    margin: 0 auto; /* Ekran markazida joylash */
+}
+
+.avatar-site {
+    margin-right: 45px;
+}
+
+
+
+.menu-buttons {
+    display: flex;
+    justify-content: center; /* Elementlarni o'rtada joylash */
+    align-items: center; /* Elementlarni vertikal ravishda o'rtada joylash */
+    flex-wrap: wrap; /* Agar barcha tugma bir qatorga sig'masdan joylashsa */
+}
+
+.menu-buttons button {
+    margin: 5px; /* Tugmalarni bir-biridan uzaklashtirish */
+}
+
+
+.logo-site {
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+
+.menu-site {
+    display: inline-block;
+}
+
+.avatar-site {
+    display: inline-block;
+}
+
+.menu-buttons a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #00ff2a;
+}
+
+.menu-buttons a:hover {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #ffdd00;
+    border-bottom: 1px solid #ffcc00;
+}
+
+.menu-buttons a:active {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fc0b4b;
+    border-bottom: 1px solid deeppink;
+}
+
+.rejim button {
+    background: none;
+    border: none;
+    margin: 10px;
+}
