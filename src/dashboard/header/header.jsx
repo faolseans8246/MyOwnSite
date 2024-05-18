@@ -1,12 +1,17 @@
 
-import React from "react";
+import React, {useState} from "react";
 
 import './header.css';
+import LogoImage from '../../images/logo.jpg';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import Brightness6Icon from '@mui/icons-material/Brightness6';
 
 
-function header() {
+function header({onPageChange}) {
+
+    const handlePageChange = (page) => {
+        onPageChange(page);
+    }
 
     return (
 
@@ -14,7 +19,7 @@ function header() {
 
             <div className="logo-site">
 
-                <img src="#" alt="xx" className="logotipe" />
+                <img src={LogoImage} alt="-" className="logotipe" />
 
             </div>
 
@@ -22,9 +27,9 @@ function header() {
 
                 <p className="menu-buttons">
 
-                    <a href="#" className="home">HOME</a>
-                    <a href="#" className="texnologies">TEXNOLOGIES</a>
-                    <a href="#" className="resume">RESUME</a>
+                    <a href="#" className="home" onClick={() => handlePageChange("home")}>HOME</a>
+                    <a href="#" className="texnologies" onClick={() => handlePageChange("texnology")}>TEXNOLOGIES</a>
+                    <a href="#" className="resume" onClick={() => handlePageChange("myresume")}>RESUME</a>
                     <a href="#" className="contacts">CONTACT</a>
                     <a href="#" className="my-works">MY WORKS</a>
                     <a href="#" className="gallery">GALLERY</a>
@@ -33,6 +38,7 @@ function header() {
                 </p>
 
             </div>
+
 
             <div className="avatar-site">
                 

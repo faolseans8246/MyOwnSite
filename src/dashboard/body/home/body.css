@@ -1,10 +1,13 @@
 /* App.css */
 
 .body-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
     flex-direction: column;
-    min-height: 73vh;
-    width: 95%;
+    min-height: 70vh;
+    width: 94%;
     position: relative;
     z-index: -1;
 
@@ -14,13 +17,25 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 15px;
-    padding: 15px 25px;
+    padding: 25px 35px;
     border-radius: 10px;
 
 }
 
 /* Boshqa stilni kerak bo'lsa, uni ham shu faylda qo'shing */
 
-.main-text {
-    display: inline;
+.image-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*rasmini sozlash qismi*/
+.my-image {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.main-body-text {
+    color: white;
 }

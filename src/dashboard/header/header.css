@@ -13,6 +13,40 @@
     padding: 10px; /* Kerakli bo'lsa paddingni o'zgartiring */
 }
 
+.logo-site {
+    display: inline-block;
+    margin-left: 25px;
+    position: relative; /* Logo qalpoqli aylanish uchun asosiy element */
+    width: 100px; /* O'zgartirish kerak bo'lgan logoning o'lchami */
+    height: 100px; /* O'zgartirish kerak bo'lgan logoning balandligi */
+}
+
+.logotipe {
+    width: 135px; /* Logoning o'lchami qatorning to'la o'lchamiga mos kelishi uchun */
+    height: 135px; /* Logoning balandligi o'lchamiga mos kelishi uchun */
+    position: absolute; /* Aylanish uchun harakatlanadigan element */
+    top: -22px;
+    left: 0;
+    transition: transform 0.5s ease; /* Animatsiyani tayyorlash */
+    border-radius: 50%;
+    border: 3px solid red;
+}
+
+.logotipe:active {
+    width: 125px; /* Logoning o'lchami qatorning to'la o'lchamiga mos kelishi uchun */
+    height: 125px; /* Logoning balandligi o'lchamiga mos kelishi uchun */
+    position: absolute; /* Aylanish uchun harakatlanadigan element */
+    top: -20px;
+    left: 5px;
+    transition: transform 0.5s ease; /* Animatsiyani tayyorlash */
+    border-radius: 50%;
+    border: 1px solid #40ff00;
+}
+
+.logo-site:hover .logotipe {
+    transform: rotate(360deg); /* Aylanish xaraktariga animatsiya */
+}
+
 
 .menu-site {
     display: flex;
@@ -36,13 +70,6 @@
 
 .menu-buttons button {
     margin: 5px; /* Tugmalarni bir-biridan uzaklashtirish */
-}
-
-
-.logo-site {
-    display: inline-block;
-    margin-left: 25px;
-
 }
 
 

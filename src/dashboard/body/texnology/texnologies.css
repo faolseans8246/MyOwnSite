@@ -1,0 +1,81 @@
+/* App.css */
+
+.texnology-container {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*gap: 50px;*/
+
+    flex-direction: column;
+    min-height: 70vh;
+    width: 94%;
+
+    background-color: #060706;
+    color: white;
+    margin-top: 144px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    padding: 25px 35px;
+    border-radius: 10px;
+
+}
+
+.texnology-bar {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.texnology-bar {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.bar {
+
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color: #1a251a;
+
+}
+
+.bar:hover {
+
+    border: 1px solid #c809f3;
+    border-radius: 10px;
+    width: 280px;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color: #030e03;
+
+}
+
+
+.java-link {
+    text-decoration: none;
+    color: red;
+
+}
+
+.java-icon {
+    font-size: 35px;
+}
+
+.main-text {
+    color: chartreuse;
+}
+
+.softskil {
+    color: #ff7300;
+}
+
